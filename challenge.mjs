@@ -6,7 +6,6 @@ export async function blockingGet(key) {
     else pendingRequests.set(key, [resolve]);
 
     setTimeout(() => {
-      
       if (pendingRequests.has(key)) {
         const index = pendingRequests.get(key).indexOf(resolve); //indexOf() returns first index of matched key data
 
