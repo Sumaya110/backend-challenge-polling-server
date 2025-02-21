@@ -40,3 +40,25 @@ Start the project
 node index.mjs
 
 ```
+Browser url
+
+```
+http://localhost:6969/blocking-get?key=any
+
+```
+Postman
+
+````
+http://localhost:6969/push?key=any
+
+
+````
+
+JSON data:
+
+```
+
+{
+    data: "any data related to key!"
+}
+```
